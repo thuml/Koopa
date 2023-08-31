@@ -9,6 +9,10 @@ python -u run.py \
   --seq_len 96 \
   --pred_len 48 \
   --seg_len 48 \
+  --dynamic_dim 128 \
+  --hidden_dim 64 \
+  --hidden_layers 2 \
+  --num_blocks 4 \
   --enc_in 21 \
   --dec_in 21 \
   --c_out 21 \
@@ -28,6 +32,10 @@ python -u run.py \
   --seq_len 192 \
   --pred_len 96 \
   --seg_len 96 \
+  --dynamic_dim 64 \
+  --hidden_dim 128 \
+  --hidden_layers 3 \
+  --num_blocks 2 \
   --enc_in 21 \
   --dec_in 21 \
   --c_out 21 \
@@ -47,6 +55,10 @@ python -u run.py \
   --seq_len 288 \
   --pred_len 144 \
   --seg_len 144 \
+  --dynamic_dim 128 \
+  --hidden_dim 64 \
+  --hidden_layers 2 \
+  --num_blocks 2 \
   --enc_in 21 \
   --dec_in 21 \
   --c_out 21 \
@@ -66,6 +78,10 @@ python -u run.py \
   --seq_len 384 \
   --pred_len 192 \
   --seg_len 192 \
+  --dynamic_dim 128 \
+  --hidden_dim 64 \
+  --hidden_layers 2 \
+  --num_blocks 3 \
   --enc_in 21 \
   --dec_in 21 \
   --c_out 21 \
