@@ -8,14 +8,23 @@ This is the official codebase for the paper: [Koopa: Learning Non-stationary Tim
 Koopa is a **lightweight**, **MLP-based**, and **theory-inspired** model for efficient time series forecasting. 
 
 - Compared with the advanced but painstakingly trained deep forecasters, Koopa achieves state-of-the-art performance while saving **77.3%** training time and **76.0%** memory footprint.
-![model efficiency](./figures/efficiency.png)
 
+<p align="center">
+<img src="./figures/efficiency.png" height = "240" alt="" align=center />
+</p>
 
 - Focus on portraying ubiquitous **non-stationary** time series, Koopa shows **enhanced model capacity** empowered by the modern Koopman theory that naturally addresses the nonlinear evolution of real-world time series.
-![motivation](./figures/motivation.png)
+  
+<p align="center">
+<img src="./figures/motivation.png" height = "180" alt="" align=center />
+</p>
 
 - Koopa differs from the canonical Koopman Autoencoder without the reconstruction loss function to achieve **end-to-end predictive training**.
-![architecture](./figures/architecture.png)
+  
+<p align="center">
+<img src="./figures/architecture.png" height = "360" alt="" align=center />
+</p>
+
 
 ## Preparation
 
@@ -43,7 +52,10 @@ bash ./scripts/ETT_script/Koopa.sh
 - By adapting the operator on the incoming time series during rolling forecast, the proposed model can achieve more accurate performance via adapting to continuous distribution shift.
 
 - The naïve implementation of operator adaptation is based on the DMD algorithm. We propose an iterative algorithm with reduced complexity. The details can be found in the Appendix of our paper.
-![theoretical contributions](./figures/algorithm.png)
+
+<p align="center">
+<img src="./figures/algorithm.png" height = "480" alt="" align=center />
+</p>
 
 ## Citation
 
