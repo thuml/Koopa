@@ -1,19 +1,21 @@
 # Koopa
 
-This is the codebase for the paper:
-[Koopa: Learning Non-stationary Time Series Dynamics with Koopman Predictors](https://arxiv.org/pdf/2305.18803.pdf), arXiv preprint 2023.
+
+This is the official codebase for the paper: [Koopa: Learning Non-stationary Time Series Dynamics with Koopman Predictors](https://arxiv.org/pdf/2305.18803.pdf), Neurips 2023. 
+
+## Introduction
+
+Koopa is a **lightweight**, **MLP-based** and **theory-inspired** model for efficient time series forecasting. 
+
+- Compared with the advanced but painstakingly trained deep forecasters, Koopa achieves the state-of-the-art performance while saving **77.3%** training time and **76.0%** memory footprint.
+![model efficiency](./figures/efficiency.png)
 
 
-## Architecture
-
+- Focus on portraying ubiquitous **non-stationary** time series, Koopa shows **enhanced model capacity** empowered by the modern Koopman theory that naturally addresses the nonlinear evolution of real-world time series.
 ![motivation](./figures/motivation.png)
 
-
+- Koopa differs from the canocial Koopman Autoencoder without the reconstruction loss function to achieve **end-to-end predictive training**.
 ![architecture](./figures/architecture.png)
-
-## Koopman Predictors
-
-![koopman predictors](./figures/kps.png)
 
 ## Preparation
 
@@ -36,13 +38,13 @@ bash ./scripts/Exchange_script/Koopa.sh
 bash ./scripts/ETT_script/Koopa.sh
 ```
 
-## Interpretable Results
+## Scaling Up Forecasting Horizon
 
-![interpretable results](./figures/interpretable.png)
+- Based on the linearity of Koopman operators, the proposed model is able to utilize incoming series and adapt the operator to varying time series dynamics to scale up forecast horizon.
 
-## Model Efficiency
+- The naïve implementation of operators adaptation is based on the DMD algorithm. We propose an iterative algorithm with reduced complexity.
 
-![model efficiency](./figures/efficiency.png)
+![theoretical contributions](./figures/algorithm.png)
 
 ## Citation
 
@@ -60,5 +62,5 @@ If you find this repo useful, please cite our paper.
 ## Contact
 
 If you have any questions or want to use the code, please contact:
-* liuyong21@mails.tsinghua.edu.cn.
+* liuyong21@mails.tsinghua.edu.cn
 * lichenyu20@mails.tsinghua.edu.cn
