@@ -5,21 +5,21 @@ This is the official codebase for the paper: [Koopa: Learning Non-stationary Tim
 
 ## Introduction
 
-Koopa is a **lightweight**, **MLP-based** and **theory-inspired** model for efficient time series forecasting. 
+Koopa is a **lightweight**, **MLP-based**, and **theory-inspired** model for efficient time series forecasting. 
 
-- Compared with the advanced but painstakingly trained deep forecasters, Koopa achieves the state-of-the-art performance while saving **77.3%** training time and **76.0%** memory footprint.
+- Compared with the advanced but painstakingly trained deep forecasters, Koopa achieves state-of-the-art performance while saving **77.3%** training time and **76.0%** memory footprint.
 ![model efficiency](./figures/efficiency.png)
 
 
 - Focus on portraying ubiquitous **non-stationary** time series, Koopa shows **enhanced model capacity** empowered by the modern Koopman theory that naturally addresses the nonlinear evolution of real-world time series.
 ![motivation](./figures/motivation.png)
 
-- Koopa differs from the canocial Koopman Autoencoder without the reconstruction loss function to achieve **end-to-end predictive training**.
+- Koopa differs from the canonical Koopman Autoencoder without the reconstruction loss function to achieve **end-to-end predictive training**.
 ![architecture](./figures/architecture.png)
 
 ## Preparation
 
-1. Install Python 3.7 and neccessary dependencies.
+1. Install Python 3.7 and the necessary dependencies.
 ```
 pip install -r requirements.txt
 ```
@@ -38,12 +38,11 @@ bash ./scripts/Exchange_script/Koopa.sh
 bash ./scripts/ETT_script/Koopa.sh
 ```
 
-## Scaling Up Forecasting Horizon
+## Applicable for Rolling Forecast
 
-- Based on the linearity of Koopman operators, the proposed model is able to utilize incoming series and adapt the operator to varying time series dynamics to scale up forecast horizon.
+- By adapting the operator on the incoming time series during rolling forecast, the proposed model can achieve more accurate performance via adapting to continuous distribution shift.
 
-- The naïve implementation of operators adaptation is based on the DMD algorithm. We propose an iterative algorithm with reduced complexity.
-
+- The naïve implementation of operator adaptation is based on the DMD algorithm. We propose an iterative algorithm with reduced complexity. The details can be found in the Appendix of our paper.
 ![theoretical contributions](./figures/algorithm.png)
 
 ## Citation
