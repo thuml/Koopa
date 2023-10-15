@@ -57,6 +57,13 @@ bash ./scripts/ETT_script/Koopa.sh
 <img src="./figures/algorithm.png" height = "480" alt="" align=center />
 </p>
 
+## Discussions
+
+There are already serveral discussions about our paper, we appreciate the authors a lot for their valuable efforts and comments.
+
+* [Openreview] https://openreview.net/forum?id=jsanMaAxZE
+* [Zhihu] https://www.zhihu.com/question/24189178/answer/3064876852
+
 ## Citation
 
 If you find this repo useful, please cite our paper. 
