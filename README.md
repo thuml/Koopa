@@ -53,9 +53,13 @@ bash ./scripts/ETT_script/Koopa.sh
 
 - The naïve implementation of operator adaptation is based on the DMD algorithm. We propose an iterative algorithm with reduced complexity. The details can be found in the Appendix of our paper.
 
+
+- We also provide a tutorial notebook for a better understanding of this scenario. See `operator_adaptation.ipynb` for the details.
 <p align="center">
 <img src="./figures/algorithm.png" height = "480" alt="" align=center />
 </p>
+
+
 
 ## Discussions
 
