@@ -26,9 +26,14 @@ Koopa is a **lightweight**, **MLP-based**, and **theory-inspired** model for eff
 </p>
 
 
+## Discussions
+
+There are already serveral discussions about our paper, we appreciate a lot for their valuable comments and efforts: [[Official]](https://mp.weixin.qq.com/s/10PoA6n51Qok-nJT6_vkhA), [[Openreview]](https://openreview.net/forum?id=jsanMaAxZE), [[Zhihu]](https://www.zhihu.com/question/24189178/answer/3064876852).
+
+
 ## Preparation
 
-1. Install Python 3.7 and the necessary dependencies.
+1. Install Pytorch (>=1.12.0) and other necessary dependencies.
 ```
 pip install -r requirements.txt
 ```
@@ -59,14 +64,6 @@ bash ./scripts/ETT_script/Koopa.sh
 <img src="./figures/algorithm.png" height = "480" alt="" align=center />
 </p>
 
-
-
-## Discussions
-
-There are already serveral discussions about our paper, we appreciate a lot for their valuable comments and efforts.
-
-* [Openreview] https://openreview.net/forum?id=jsanMaAxZE
-* [Zhihu] https://www.zhihu.com/question/24189178/answer/3064876852
 
 ## Citation
 
