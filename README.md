@@ -1,7 +1,10 @@
 # Koopa
 
-
 This is the official codebase for the paper: [Koopa: Learning Non-stationary Time Series Dynamics with Koopman Predictors](https://arxiv.org/pdf/2305.18803.pdf), NeurIPS 2023. 
+
+## Updates
+
+:triangular_flag_on_post: **News** (2023.10) Koopa has been included in [[Time-Series-Library]](https://github.com/thuml/Time-Series-Library).
 
 ## Introduction
 
