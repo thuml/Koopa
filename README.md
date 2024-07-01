@@ -4,7 +4,8 @@ This is the official codebase for the paper: [Koopa: Learning Non-stationary Tim
 
 ## Updates
 
-:triangular_flag_on_post: **News** (2024.2)  Introduction of our work in Chinese is available: [[Official]]([https://github.com/thuml/Time-Series-Library](https://mp.weixin.qq.com/s/10PoA6n51Qok-nJT6_vkhA)), [[Zhihu]](https://www.zhihu.com/question/24189178/answer/3064876852).
+:triangular_flag_on_post: **News** (2024.2)  Introduction of our work in Chinese is available: [[Official]](https://mp.weixin.qq.com/s/10PoA6n51Qok-nJT6_vkhA), [[Zhihu]](https://www.zhihu.com/question/24189178/answer/3064876852).
+
 :triangular_flag_on_post: **News** (2023.10) Koopa has been included in [[Time-Series-Library]](https://github.com/thuml/Time-Series-Library).
 
 ## Introduction
